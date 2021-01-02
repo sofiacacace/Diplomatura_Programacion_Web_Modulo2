@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Seleccione los productos que desea comprar</h1>
+    
+    <form action="#">
+        <!-- begin::products -->
+        <label for="harina">Harina $35 <input type="checkbox" name="producto" value="harina" onChange="buyProduct(event)"></label>
+        <label for="pan">Pan $25 <input type="checkbox" name="producto" value="pan" onChange="buyProduct(event)"></label>
+        <label for="papa">Papa $52 <input type="checkbox" name="producto" value="papa" onChange="buyProduct(event)"></label>
+        <label for="palta">Palta $55 <input type="checkbox" name="producto" value="palta" onChange="buyProduct(event)"></label>
+        <label for="fideos">Fideos $85 <input type="checkbox" name="producto" value="fideos" onChange="buyProduct(event)"></label>
+        <label for="aceite">Aceite $350 <input type="checkbox" name="producto" value="aceite" onChange="buyProduct(event)"></label>
+        <label for="sopa">Sopa $86 <input type="checkbox" name="producto" value="sopa" onChange="buyProduct(event)"></label>
+        <label for="mermelada">Mermelada $108 <input type="checkbox" name="producto" value="mermelada" onChange="buyProduct(event)"></label>
+        <label for="porotos">Porotos $69 <input type="checkbox" name="producto" value="porotos" onChange="buyProduct(event)"></label>
+        <label for="lentejas">Lentejas $85 <input type="checkbox" name="producto" value="lentejas" onChange="buyProduct(event)"></label>
+        <label for="mandarina">Mandarina $43 <input type="checkbox" name="producto" value="Mandarina" onChange="buyProduct(event)"></label>
+        <label for="banana">Banana $79 <input type="checkbox" name="producto" value="banana" onChange="buyProduct(event)"></label>
+        <label for="leche de almendras">Leche de almendras $145 <input type="checkbox" name="producto" value="leche de almendras" onChange="buyProduct(event)"></label>
+        <label for="papel higienico">Papel higiénico $147 <input type="checkbox" name="producto" value="papel higienico" onChange="buyProduct(event)"></label>
+        <label for="lavandina">Lavandina $55 <input type="checkbox" name="producto" value="lavandina" onChange="buyProduct(event)"></label>
+        <label for="alcohol en gel">Alcohol en gel $123 <input type="checkbox" name="producto" value="fideos" onChange="buyProduct(event)"></label>
+        <label for="shampoo">Shampoo $400 <input type="checkbox" name="producto" value="shampoo" onChange="buyProduct(event)"></label>
+        <label for="arroz">Arroz $66 <input type="checkbox" name="producto" value="arroz" onChange="buyProduct(event)"></label>
+        <label for="salsa de tomate">Salsa de tomate $35 <input type="checkbox" name="producto" value="salsa de tomate" onChange="buyProduct(event)"></label>
+        <!-- end::products -->
+        <br>
+        <!-- Button to send purchase -->
+        <button type="button" value="buy" onClick="buyProduct(event)">Comprar</button>
+        <input type="button" value="Resetear" onclick="location.reload()"/>
+    </form>
+    <br>
+    <!-- print-result-->
+    <div id="text"></div>
+    <div id="list"></div><br>
+    <div id="total"></div>
+    <br>
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
