@@ -83,12 +83,11 @@ var listProducts = [];
 
 //Functions
 function buyProduct(e){
-    
-    if (e.target.value != 'buy'){
-        
+   
+    if (e.target.value != 'buy' &&  !listProducts.includes(e.target.value) ){
         listProducts.push(e.target.value);
-        
-    } else{
+
+    } else if (e.target.value == 'buy'){
         document.querySelector('#text').innerHTML = "Lista de productos comprados:";
         document.querySelector('#list').innerHTML = listProducts.join(', ');
 
@@ -102,8 +101,10 @@ function buyProduct(e){
     
             }
         }
-    
+
         document.querySelector('#total').innerHTML = 'Total a pagar: $' + sum;
     }
+
+    sum = 0;
 
 }
