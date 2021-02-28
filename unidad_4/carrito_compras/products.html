@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="run()">
+    <header>
+        <img src="../carrito_compras/img/Mercado Juan.jpg" class="img">
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../carrito_compras/index.html" class="menu">
+                    <i class="fa fa-reply" aria-hidden="true"></i>
+                    Volver
+                </a>
+            </li>
+            <li>
+                <a href="#carrito" class="menu">
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    Ir a carrito
+                </a>
+            </li>
+       <!-- <li>
+                <a href="" class="menu">
+                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                    Pagar
+                </a>
+            </li> -->
+        </ul>
+    </nav>
+    <main>
+        <h1>Seleccione los productos que desea comprar</h1>
+        <div id="products-container"></div>
+        <button class="button"></button>
+        <h1>Lista de productos seleccionados</h1>
+        <div id="list-container">
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </table>
+        </div>
+        <div id="carrito" class="total-price">
+            <p class="price">Total a pagar:</p>
+        </div>
+        <button class="button" onclick="location.reload()">Resetear</button>
+    </main>
+    <footer>
+        <div class="social">
+            <p>Buscanos por redes:</p>
+            <a href="" class="icon">mercadoaurelia <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="" class="icon">mercadoaurelia <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="" class="icon">aureliamdq <i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
